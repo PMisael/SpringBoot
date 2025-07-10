@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Gestor de Tareas Spring Boot</title>
+</head>
+<body>
+  <h1>Gestor de tareas</h1>
+  <h3>Nueva tarea</h3>
+  <form id="NuevaTarea">
+    <input  id="titulo"     type="text"  placeholder="Título"   required />
+    <select id="priority">
+      <option value="LOW">LOW</option>
+      <option value="MEDIUM" selected>MEDIUM</option>
+      <option value="HIGH">HIGH</option>
+    </select>
+    <button>Agregar</button>
+  </form>
+
+  <h2>Lista de tareas</h2>
+  <table id="tabla">
+    <thead>
+      <tr><th>ID</th><th>Título</th><th>Prioridad</th><th>Estatus</th></tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+    
